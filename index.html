@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Calculating the price of a Beavertail with toppings">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Theo Rafuse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    <link rel="shortcut icon" href="./images/beavertails-logo.jpg">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>The price of a Beavertail with Topping's</title>
+  </head>
+    <body>
+    <script src="./js/script.js"></script>
+    <h1>The price of a Beavertail</h1>
+    <img src="./images/beavertail-variety.JPEG" alt="E">
+      <!-- This is the code for calculating the price -->
+      <p>
+      <h3>The Beavertail:</h3>
+      <form action="javascript:beaverTailPriceCalculator()">
+        <!-- The code to choose the size of the beavertail -->
+        <label for="size-value">Beavertail size:</label>
+        <select name="size" id="size-info">
+          <option value="regular">Regular</option>
+          <option value="large">Large</option>
+        </select><br>
+        <p>Regular = $7.50</p>
+        <p>Large = $8.75</p>
+        <!-- The code to choose the first topping of the beavertail -->
+        <label for="first-topping-value">First Topping:</label>
+        <select name="topping-one" id="first-topping-info">
+          <option value="cinnamon">Cinnamon</option>
+          <option value="chocolate spread">Chocolate Spread</option>
+          <option value="maple flavoured spread">Maple Spread</option>
+        </select><br>
+        <p>Cinnamon = $1.00</p>
+        <p>Chocolate Spread = $1.25</p>
+        <p>Maple Spread = $1.25</p>
+        <!-- The code to choose the second topping of the beavertail -->
+        <label for="second-topping-value">Second Topping:</label>
+        <select name="topping-two" id="second-topping-info">
+          <option value="cinnamon">Cinnamon</option>
+          <option value="chocolate spread">Chocolate Spread</option>
+          <option value="maple flavoured spread">Maple Spread</option>
+        </select>
+        <p>Cinnamon = $1.00</p>
+        <p>Chocolate Spread = $1.25</p>
+        <p>Maple Spread = $1.25</p>
+        <input type="submit" value="Submit">
+      </form>
+    </p>
+    <!-- Create a space where the user information will be displayed -->
+    <div id="subtotal-info"></div>
+    <div id="tax-info"></div>
+    <div id="total-info"></div>
+    <p></p>
+
+    <!-- This is the radio button asking if the user has eaten a beaver tail before -->
+      <h2>Have you ever eaten a Beavertail before?</h2>
+      <center><label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+        <span class="mdl-radio__label">Yes</span>
+      </label>
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+        <span class="mdl-radio__label">No</span>
+      </label></center>
+
+  </body>
+</html>

@@ -1,0 +1,38 @@
+/* Created by: Theo Rafuse
+* Created on: Apr 2023
+* This css file defines the style of index.html
+* Assign-04-HTML-CostofBeavertail
+*/
+
+body {
+  background-color: hsl(94deg 95% 35%);
+}
+
+/* style for my header */
+h1 {
+  background-color: #08b07c;
+  color: #0014a8;
+  text-align: center;
+  padding: 40px;
+  font-size: 40px;
+}
+
+h2 {
+  padding-left: 42%;
+  color: #0014a8;
+}
+
+h3 {
+  color: #0014a8;
+  font-size: 130%;
+}
+
+p {
+  color: #0014a8;
+  font-size: 125%;
+}
+
+img {
+  position: absolute;
+  left: 20%;
+}
